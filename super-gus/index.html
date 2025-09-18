@@ -1,9 +1,14 @@
-<button id="btnSaludar">✌🏻 Saludar</button>
+<button id="btnSergio">Envia un mensaje</button>
 
 <script>
-	let btnSaludar = document.getElementById( 'btnSaludar' );
+	var boton = document.getElementById( "btnSergio" );
 
-	btnSaludar.addEventListener( 'click', () => {
-		alert( 'Hola Gustavo, buenas noches!' );
-	}, false )
+	// list the events in addEventListener
+	// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+	boton.addEventListener( "dblclick", function() {
+		alert( "Hola Sergio!" );
+	}, false );
+
+	console.log( boton );
 </script>
